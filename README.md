@@ -4,7 +4,7 @@ An interactive analytics dashboard using coherent illustrative report data.
 
 ![Pulse — SaaS Analytics screenshot](docs/preview.webp)
 
-## Explore
+## What to try
 
 - Switch between 7-day and 30-day reports
 - Inspect the SVG revenue chart
@@ -23,9 +23,21 @@ Open http://localhost:8000. No build step, account, API key or package installat
 
 HTML, CSS and JavaScript. Google Fonts have system-font fallbacks.
 
-## Scope
+## Project status
 
-Original frontend concept by Muhammad Rafay Qureshi, prepared in November 2026. All revenue, customer and subscription data is illustrative. No personal data is sent to a server. The included shared demo assets power the interactions selected by this page's `data-demo` attribute.
+Original frontend concept by Muhammad Rafay Qureshi. All revenue, customer and subscription data is illustrative. No personal data is sent to a server.
+
+## Implementation notes
+
+| File | Responsibility |
+| --- | --- |
+| index.html | Semantic page structure and the project-specific interface |
+| demo.css | Responsive layout and shared visual system |
+| demo.js | Browser interaction controller |
+| docs/preview.webp | Screenshot of the implemented interface |
+| assets/favicon.svg | Project icon |
+
+The page selects its interaction module through its data-demo attribute. Shared assets are included locally, so this repository can be served on its own. The interface uses sample data and does not require a backend service.
 
 ## Portfolio
 
